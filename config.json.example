@@ -2,9 +2,11 @@
     "bot_token": "",
     "github_info": {
         "username": "",
-        "password": ""
+        "personal_access_token": ""
     },
     "gist_id": "",
-    "main_server": "",
-    "owner_id": ""
+    "vndb": {
+        "username": "",
+        "password": ""
+    }
 }
