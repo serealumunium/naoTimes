@@ -8,5 +8,9 @@
     "vndb": {
         "username": "",
         "password": ""
+    },
+    "nyaasi": {
+        "username": "",
+        "password": ""
     }
 }
