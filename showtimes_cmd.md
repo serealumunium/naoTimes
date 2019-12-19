@@ -4,6 +4,23 @@ Ini merupakan module utama yang membantu tracking garapan Fansub.<br>
 Untuk menyiapkannya, tolong liat bagian [Invite Bot](README#invite-bot)<br>
 Jika sudah, mari kita mulai melihat list perintahnya
 
+#### Table of Contents: {docsify-ignore}
+* [Perintah Utama](#perintah-utama)
+    * [Perintah User](#perintah-utama-user)
+    * [Perintah Staff](#perintah-utama-staff)
+    * [Perintah Admin](#perintah-utama-admin)
+    * [Dalam .gif](#dalam-gif)
+        * [Pengguna](#pengguna)
+        * [Staff](#staff-2)
+        * [Admin](#admin)
+* [Perintah Alias](#perintah-alias)
+    * [Dalam .gif](#dalam-gif-1)
+* [Perintah Kolaborasi](#perintah-kolaborasi)
+    * [Penjelasan](#penjelasan-koleb)
+    * [Dalam .gif](#dalam-gif-2)
+* [Perintah Bot Owner](#perintah-owner)
+    * [Dalam .gif](#dalam-gif-3)
+
 ## Perintah Utama
 
 Perintah utama dibagi menjadi 3 tier, yaitu pengujung/user, staff, dan admin.
@@ -68,6 +85,8 @@ Maka tulis <strong>jumlahnya 4</strong>
 
 ### Dalam .gif
 
+#### Pengguna
+
 ##### !tagih<br> {docsify-ignore}
 ![tagih](https://p.ihateani.me/NLu8jpFr.gif)
 
@@ -76,6 +95,8 @@ Maka tulis <strong>jumlahnya 4</strong>
 
 ##### !staff<br> {docsify-ignore}
 ![staff](http://p.ihateani.me/z7O78goi.gif)
+
+#### Staff
 
 ##### !beres<br> {docsify-ignore}
 ![beres](https://p.ihateani.me/ZcAtLsiO.gif)
@@ -88,6 +109,8 @@ Maka tulis <strong>jumlahnya 4</strong>
 
 ##### !rilis | !rilis batch | !rilis semua<br> {docsify-ignore}
 ![rilis](http://p.ihateani.me/OyNzFpoL.gif)
+
+#### Admin
 
 ##### !tambahutang<br> {docsify-ignore}
 ![tambahutang](https://p.ihateani.me/ifQMCsOt.gif)
@@ -106,33 +129,63 @@ Maka tulis <strong>jumlahnya 4</strong>
 ### Dalam .gif
 
 ##### !alias<br> {docsify-ignore}
-![alias]()
+![alias](https://p.ihateani.me/iAvg2Kom.gif)
 
 ##### !alias list<br> {docsify-ignore}
-![alias list]()
+![alias list](https://p.ihateani.me/tEqbYc0Y.gif)
 
 ##### !alias hapus<br> {docsify-ignore}
-![alias hapus]()
+![alias hapus](http://p.ihateani.me/BROMxMzu.gif)
 
 ## Perintah Kolaborasi
 
 | Nama Command | Penjelasan |  Contoh  | Alias |
 |:------------:|:----------:|:--------:|:-----:|
-| !alias | Tambahkan alias baru dengan command ini, cukup jalankan `!alias` untuk memulai proses.<br>Anda akan dibantu melewati proses penambahan utang<br>silakan melihat [.gif ini](https://p.ihateani.me/ifQMCsOt.gif) jika kurang mengerti | !alias | - |
-| !alias list **[judul]** | Melihat daftar alias dari suatu **[judul]**.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !alias list kyuuketsuki | - |
-| !alias hapus **[judul]** | Menghapus alias dari suatu **[judul]**.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !alias hapus kyuuketsuki | !alias remove |
+| !kolaborasi | Memunculkan bantuan perintah kolaborasi | !kolaborasi | !joint<br>!join<br>!koleb |
+| !kolaborasi dengan **[server_id_kolaborasi]** **[judul]** | Memulai proses kolaborasi dengan server/fansub lain, berikan kode unik yang diberikan bot ke admin server/fansub sebelah.<br><br>**[server_id_kolaborasi]**: Merupakan ID server yang ingin diajak kolaborasi (Harus teedaftar di database naoTimes)<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !kolaborasi dengan 472705451117641729 kyuuketsuki | - |
+| !kolaborasi konfirmasi **[kode]** | Konfirmasi kolaborasi garapan dengan **[kode]** unik | !kolaborasi konfirmasi eyasd123hnbbq | - |
+| !kolaborasi putus **[judul]** | Memutuskan hubungan sinkronisasi data dengan semua fansub yang diajak kolaborasi<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !kolaborasi putus kyuuketsuki | - |
+| !kolaborasi batalkan **[server_id_kolaborasi]** **[kode]** | Membatalkan kode konfirmasi kolaborasi dengan fansub lain<br><br>**[server_id_kolaborasi]**: Merupakan ID server yang ingin diajak kolaborasi (Harus teedaftar di database naoTimes)<br><br>**[kode]** merupakan kode unik yang dibuat saat melakukan `!konfirmasi dengan` | !kolaborasi batalkan 472705451117641729 eyasd123hnbbq | - |
 
 ### Penjelasan :id=penjelasan-koleb
-Yes.
+**Kegunaan:**<br>
+Mengsinkronasikan proses garapan dengan server lain yang terdaftar pada database naoTimes.<br>
+Kolaborasi bisa lebih dari 2 server.
+
+!> Jika salah satu server meng-update data untuk anime yang melakukan kolaborasi, maka akan meng-update data server lainnya juga dan akan di announce juga ke semua server yang berkolaborasi
+
+**Penjelasan perintah**<br>
+- !kolaborasi dengan **[server_id_kolaborasi]** **[judul]**<br>
+Memulai proses kolaborasi dengan server/fansub lain, berikan kode unik yang diberikan bot ke admin server/fansub sebelah<br>
+Proses ini akan membuat kode unik yang hanya bisa dipakai oleh server yang ditarget.
+- !kolaborasi konfirmasi **[kode]**<br>
+Melakukan konfirmasi kolaborasi.<br>
+Jika anime sudah didaftar, maka akan di overwrite dari data yang mengajak kolaborasi.<br>
+Role akan dibuat otomatis dan tinggal diberikan ke staff.
+- !kolaborasi putus **[judul]**<br>
+Memutuskan hubungan sinkronisasi dengan semua fansub yang diajak kolaborasi<br>
+Server lain akan tetap tersinkronisasi (jika ada) dan tidak akan terpengaruh.
+- !kolaborasi batalkan **[server_id_kolaborasi]** **[kode]**<br>
+Menghanguskan kode yang telah dibuat<br>
+Jika terjadi kesalahan dan lain sebagainya.
 
 ### Dalam .gif
 
-##### !alias<br> {docsify-ignore}
-![alias]()
+##### !kolaborasi dengan | !kolaborasi konfirmasi<br> {docsify-ignore}
+![kolaborasi dengan dan konfirmasi](https://puu.sh/DMMCC/545054a8a4.gif)
 
-##### !alias list<br> {docsify-ignore}
-![alias list]()
+##### !kolaborasi putus<br> {docsify-ignore}
+![kolaborasi putus](https://puu.sh/DMNol/32052d20e0.gif)
 
-##### !alias hapus<br> {docsify-ignore}
-![alias hapus]()
+##### !kolaborasi batalkan<br> {docsify-ignore}
+![kolaborasi batalkan](https://puu.sh/DMNtB/29f0d20016.gif)
 
+## Perintah Bot Owner (Admin) :id=perintah-owner
+
+| Nama Command | Penjelasan |  Contoh  | Alias |
+|:------------:|:----------:|:--------:|:-----:|
+| !ntadmin | Memunculkan bantuan perintah owner | !ntadmin | !naotimesadmin<br>!naoadmin |
+
+### Dalam .gif
+
+WIP
