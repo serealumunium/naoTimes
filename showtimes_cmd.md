@@ -12,7 +12,7 @@ Perintah utama dibagi menjadi 3 tier, yaitu pengujung/user, staff, dan admin.
 * [Perintah Admin](#perintah-utama-admin)
 * [Dalam .gif](showtimes_cmd#dalam-gif)
 
-#### Perintah Utama: User
+### Perintah Utama: User
 
 | Nama Command | Penjelasan |  Contoh  | Alias |
 |:------------:|:----------:|:--------:|:-----:|
@@ -20,7 +20,7 @@ Perintah utama dibagi menjadi 3 tier, yaitu pengujung/user, staff, dan admin.
 | !jadwal | Melihat jadwal tayang anime musiman yang di ambil. | !jadwal | !airing |
 | !staff **[judul]** | Melihat ~~tukang delay~~ staff yang mengerjakan suatu garapan.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !staff kyuuketsuki |! tukangdelay<br>!pendelay |
 
-#### Perintah Utama: Staff
+### Perintah Utama: Staff
 
 | Nama Command | Penjelasan |  Contoh  | Alias |
 |:------------:|:----------:|:--------:|:-----:|
@@ -38,7 +38,7 @@ Merilis jumlah episode tertentu dari judul yang dikerjakan<br>
 **!rilis semua \<judul>**<br>
 Merilis semua episode dari judul yang dikerjakan
 
-<p class="notice">
+<p class="tip">
 <strong>Note:</strong> Untuk perintah !rilis batch, terdapat <strong>[jumlah]</strong> episode yang mau dirilis.
 Penghitungannya adalah <strong>Episode terakhir yang sedang dikerjakan ditambah jumlah</strong>.<br>
 Misalkan lagi <strong>ngerjain Episode 4</strong>, terus mau <strong>rilis sampai episode 7</strong><br>
@@ -46,7 +46,7 @@ Total dari <strong>Episode 4 sampai 7 ada 4</strong> (4, 5, 6, dan 7)<br>
 Maka tulis <strong>jumlahnya 4</strong>
 </p>
 
-#### Perintah Utama: Admin
+### Perintah Utama: Admin
 
 | Nama Command | Penjelasan |  Contoh  | Alias |
 |:------------:|:----------:|:--------:|:-----:|
@@ -66,35 +66,73 @@ Maka tulis <strong>jumlahnya 4</strong>
 **Hapus Episode** akan menghapus episode dengan range tertentu, instruksi lengkap ada di mode tersebut.<br>
 **Drop (!!!)** akan menghapus garapan dari database untuk selamanya.
 
-#### Dalam .gif
+### Dalam .gif
 
-##### !tagih<br>
+##### !tagih<br> {docsify-ignore}
 ![tagih](https://p.ihateani.me/NLu8jpFr.gif)
 
-##### !staff<br>
+##### !staff<br> {docsify-ignore}
 ![staff](https://p.ihateani.me/X9TppU1y.gif)
 
-##### !staff<br>
+##### !staff<br> {docsify-ignore}
 ![staff](http://p.ihateani.me/z7O78goi.gif)
 
-<br><br>
-
-##### !beres<br>
+##### !beres<br> {docsify-ignore}
 ![beres](https://p.ihateani.me/ZcAtLsiO.gif)
 
-##### !gakjadi<br>
+##### !gakjadi<br> {docsify-ignore}
 ![gakjadi](https://p.ihateani.me/gjCfsFpA.gif)
 
-##### !tandakan
+##### !tandakan {docsify-ignore}
 ![tandakan](https://p.ihateani.me/eOVoUfoD.gif)
 
-##### !rilis | !rilis batch | !rilis semua<br>
+##### !rilis | !rilis batch | !rilis semua<br> {docsify-ignore}
 ![rilis](http://p.ihateani.me/OyNzFpoL.gif)
 
-<br><br>
-
-##### !tambahutang<br>
+##### !tambahutang<br> {docsify-ignore}
 ![tambahutang](https://p.ihateani.me/ifQMCsOt.gif)
 
-##### !ubahdata<br>
+##### !ubahdata<br> {docsify-ignore}
 ![ubahdata](http://p.ihateani.me/0V0wbuFu.gif)
+
+## Perintah Alias
+
+| Nama Command | Penjelasan |  Contoh  | Alias |
+|:------------:|:----------:|:--------:|:-----:|
+| !alias | Tambahkan alias baru dengan command ini, cukup jalankan `!alias` untuk memulai proses.<br>Anda akan dibantu melewati proses penambahan utang<br>silakan melihat [.gif ini](https://p.ihateani.me/ifQMCsOt.gif) jika kurang mengerti | !alias | - |
+| !alias list **[judul]** | Melihat daftar alias dari suatu **[judul]**.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !alias list kyuuketsuki | - |
+| !alias hapus **[judul]** | Menghapus alias dari suatu **[judul]**.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !alias hapus kyuuketsuki | !alias remove |
+
+### Dalam .gif
+
+##### !alias<br> {docsify-ignore}
+![alias]()
+
+##### !alias list<br> {docsify-ignore}
+![alias list]()
+
+##### !alias hapus<br> {docsify-ignore}
+![alias hapus]()
+
+## Perintah Kolaborasi
+
+| Nama Command | Penjelasan |  Contoh  | Alias |
+|:------------:|:----------:|:--------:|:-----:|
+| !alias | Tambahkan alias baru dengan command ini, cukup jalankan `!alias` untuk memulai proses.<br>Anda akan dibantu melewati proses penambahan utang<br>silakan melihat [.gif ini](https://p.ihateani.me/ifQMCsOt.gif) jika kurang mengerti | !alias | - |
+| !alias list **[judul]** | Melihat daftar alias dari suatu **[judul]**.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !alias list kyuuketsuki | - |
+| !alias hapus **[judul]** | Menghapus alias dari suatu **[judul]**.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !alias hapus kyuuketsuki | !alias remove |
+
+### Penjelasan :id=penjelasan-koleb
+Yes.
+
+### Dalam .gif
+
+##### !alias<br> {docsify-ignore}
+![alias]()
+
+##### !alias list<br> {docsify-ignore}
+![alias list]()
+
+##### !alias hapus<br> {docsify-ignore}
+![alias hapus]()
+

@@ -1,0 +1,33 @@
+{
+    "short_name": "naoTimes",
+    "name": "naoTimes - Pemantau garapan Fansub",
+    "description": "Bot berbahasa Indonesia untuk membantu tracking garapan fansubber.",
+    "icons": [
+      {
+        "src": "/assets/img/nt256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "/assets/img/nt120.png",
+        "type": "image/png",
+        "sizes": "120x120"
+      },
+      {
+        "src": "/assets/img/nt512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/assets/img/nt192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "background_color": "#3f3f3f",
+    "display": "standalone",
+    "theme_color": "#ea6f5a",
+    "version": "1.0"
+  }

@@ -21,5 +21,6 @@ Beberapa kredit lainnya adalah:
 - [Anilist.co](https://anilist.co/) untuk API anime dan manganya.
 - [VNDB.org](https://vndb.org/) untuk API visual novelnya.
 - [Ian Mitchell](https://github.com/IanMitchell) sebagai inspirasi utama untuk bot showtimes ([Aquarius](https://github.com/IanMitchell/aquarius))
+- [PyMoe](https://github.com/ccubed/PyMoe) untuk `class VNDBSocket` yang tak pake.
 - Dan berbagai macam orang yang menjadi orang pertama yang mencoba bot naoTimes 💕
 - Dan juga beberapa orang lain yang tak colong snippet kodenya dan dah gak inget lagi 🏃
