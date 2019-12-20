@@ -186,6 +186,8 @@ Jika terjadi kesalahan dan lain sebagainya.
 |:------------:|:----------:|:--------:|:-----:|
 | !ntadmin | Memunculkan bantuan perintah owner | !ntadmin | !naotimesadmin<br>!naoadmin |
 
+WIP
+
 ### Dalam .gif
 
 WIP
