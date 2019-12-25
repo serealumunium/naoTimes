@@ -6,7 +6,7 @@
 
 > Bot berbahasa Indonesia untuk membantu tracking garapan fansubber.
 
+[Invite](https://ihateani.me/andfansub)
 [Dokumentasi](#mulai-dari-sini)
-[Source Code](https://github.com/docsifyjs/docsify/)
 
 ![color](#282828)
