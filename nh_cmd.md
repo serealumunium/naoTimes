@@ -39,3 +39,6 @@ Gunakan `!nh baca` atau klik react :book: sebelum mengunduh untuk mempercepat pr
 
 ##### !nh baca<br> {docsify-ignore}
 ![nh baca](http://p.ihateani.me/kLWTmHVO.gif)
+
+#### !nh unduh<br> {docsify-ignore}
+![nh unduh](https://p.ihateani.me/lHZSq0tK.gif)
