@@ -31,11 +31,13 @@ Perintah utama dibagi menjadi 3 tier, yaitu pengujung/user, staff, dan admin.
 
 ### Perintah Utama: User
 
+<div class="responsive-tbl">
 | Nama Command | Penjelasan |  Contoh  | Alias |
 |:------------:|:----------:|:--------:|:-----:|
 | !tagih **[judul]** | Menagih garapan suatu fansub yang terdaftar di database.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !tagih kyuuketsuki | !blame<br>!mana |
 | !jadwal | Melihat jadwal tayang anime musiman yang di ambil. | !jadwal | !airing |
 | !staff **[judul]** | Melihat ~~tukang delay~~ staff yang mengerjakan suatu garapan.<br><br>**[judul]**: Judul garapan yang terdaftar, bisa disingkat sesingkat mungkin | !staff kyuuketsuki |! tukangdelay<br>!pendelay |
+</div>
 
 ### Perintah Utama: Staff
 
