@@ -8,11 +8,19 @@ Setiap command support pagination agar bisa melihat berbagai macam hasil dengan 
 |:------------:|:----------:|:--------:|:-----:|
 | !anime **[judul]** | Mencari/melihat anime.<br><br>**[judul]**: Judul anime ataupun manga yang ada di Anilist.co | !anime hitoribocchi | !animu<br>!kartun<br>!ani |
 | !manga **[judul]** | Mencari/melihat manga.<br><br>**[judul]**: Judul anime ataupun manga yang ada di Anilist.co | !anime hitoribocchi | !mango<br>!komik |
+| !tayang | Melihat jadwal tayang anime pada musim sekarang | !tayang | - |
+
 
 !> **Tambahan**<br>
 :rewind: Anime/Manga Sebelumnya<br>
 :fast_forward: Anime/Manga Selanjutnya<br>
 :white_check_mark: Selesai melihat (Menghapus embed)<br>
+:hourglass_flowing_sand: Waktu ke episode selanjutnya (Untuk `!anime` saja)<br>
+:thumbsup: Melihat info anime kembali (Untuk `!anime` saja, muncul setelah memakai :hourglass_flowing_sand:)
+
+!> **Tambahan !tayang**<br>
+0 - H: Melihat listing per sisa hari ke episode selanjutnya<br>
+:white_check_mark: Selesai melihat/kembali ke listing<br>
 :hourglass_flowing_sand: Waktu ke episode selanjutnya (Untuk `!anime` saja)<br>
 :thumbsup: Melihat info anime kembali (Untuk `!anime` saja, muncul setelah memakai :hourglass_flowing_sand:)
 
@@ -36,6 +44,9 @@ Setiap command support pagination agar bisa melihat berbagai macam hasil dengan 
 
 ##### !manga<br> {docsify-ignore}
 ![manga](http://p.ihateani.me/cIJnG4TQ.gif)
+
+##### !tayang<br> {docsify-ignore}
+![tayang](https://p.ihateani.me/Yv2xxAwC.gif)
 
 ##### !vn<br> {docsify-ignore}
 ![vn](https://p.ihateani.me/f6773QQ0.gif)
